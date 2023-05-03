@@ -6,7 +6,7 @@ void ImprimirFibonacci(int n){
 
     a = b = 1;
    
-    printf("El termino 1 de la serie de fibonacci es %d \n El termino 2 de la serie de fibonacci es %d ", a, b);
+    printf("El termino 1 de la serie de fibonacci es %d \nEl termino 2 de la serie de fibonacci es %d\n", a, b);
 
     for(int i = 1; i <= n-2; i++) {
 
