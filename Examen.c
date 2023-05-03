@@ -6,7 +6,10 @@ void ImprimirFibonacci(int n){
 
     a = b = 1;
     d= 2;
-   
+    
+    //primeros terminos siempre son los mismos
+
+
     printf("El termino 1 de la serie de fibonacci es %d \nEl termino 2 de la serie de fibonacci es %d\n", a, b);
 
     for(int i = 1; i <= n-2; i++) {
@@ -17,7 +20,8 @@ void ImprimirFibonacci(int n){
         b = c;
         d = d + c;
     }
-    
+
+    //suma
     printf ("La suma de los numeros es: %d", d);
 }
 
@@ -29,11 +33,13 @@ int main(){
 
     scanf("%d", &n);
 
+    //verifica que el entero sea positivo
     if (n > 0){
 
         ImprimirFibonacci(n);
 
     } else {
+        //error
         printf("Su numero no es un entero positivo");
     }
 
