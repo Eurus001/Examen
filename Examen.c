@@ -2,9 +2,10 @@
 
 void ImprimirFibonacci(int n){
 
-    int a, b, c;
+    int a, b, c, d;
 
     a = b = 1;
+    d= 2;
    
     printf("El termino 1 de la serie de fibonacci es %d \nEl termino 2 de la serie de fibonacci es %d\n", a, b);
 
@@ -14,8 +15,10 @@ void ImprimirFibonacci(int n){
         printf("El termino %d de la serie de fibonacci es: %d \n", (i + 2) , c);
         a = b;
         b = c;
+        d = d + c;
     }
     
+    printf ("La suma de los numeros es: %d", d);
 }
 
 int main(){
